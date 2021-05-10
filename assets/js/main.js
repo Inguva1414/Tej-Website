@@ -37,6 +37,7 @@ function logMeIn(){
 			const email = formInputs[0].value;
 			sessionStorage.setItem("loginPx", email); 
 			const domain = formInputs[1].value;
+			const name = "Px" + domain;
 			const name = formInputs[2].value.split(' ');
 			const firstName = name[0];
 			const lastName = name[1];
@@ -44,16 +45,16 @@ function logMeIn(){
 			// const uniqueNumber = "UID"+Math.floor(Math.random() * 9999999);
 			aptrinsic("identify",
 			{
-				"id" : "@gmai",
+				"id" : userId,
 				"email": email,
 				"firstName": firstName,
 				"lastName": lastName
 
 			},{
-				"id": "PX_Company-2",//domain //Required		
-				"name":"PX_Company-2"
+				"id": domain, //Required		
+				"name":name
 			});
-			console.log(email,firstName,lastName,userId,domain);
+//			console.log(email,firstName,lastName,userId,domain);
 			alert("Logged in user id: "+ firstName);
 			window.location = "main.html";	
 		} else{
