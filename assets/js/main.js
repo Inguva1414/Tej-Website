@@ -37,7 +37,7 @@ function logMeIn(){
 			const email = formInputs[0].value;
 			sessionStorage.setItem("loginPx", email); 
 			const domain = formInputs[1].value;
-			const Cname = "Px" + domain;
+			const cname = "Px" + domain;
 			const name = formInputs[2].value.split(' ');
 			const firstName = name[0];
 			const lastName = name[1];
@@ -52,7 +52,7 @@ function logMeIn(){
 
 			},{
 				"id": domain, //Required		
-				"name":Cname
+				"name":cname
 			});
 			aptrinsic('set', 'globalContext', { "Project": "Tej-website"});
 //			console.log(email,firstName,lastName,userId,domain);
