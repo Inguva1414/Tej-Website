@@ -104,7 +104,7 @@
 
 })();
 
-
+aptrinsic('set', 'globalContext', { "Project": "Tej-website Eventually"});
 function searchFunc(){
 	const searchTerm = document.getElementById('searchTerm').value;
 	aptrinsic('track', 'SearchTerm', {"terms":searchTerm}); 
