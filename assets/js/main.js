@@ -1,9 +1,9 @@
 //Run PX Tag
-(function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+/*(function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
 	(n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
   var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
   var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
-  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-ZYRA0KIWOQTB-2");
+  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-ZYRA0KIWOQTB-2");*/
 
 
 
@@ -43,7 +43,7 @@ function logMeIn(){
 			const lastName = name[1];
 			const userId = email.split("@")[0];
 			// const uniqueNumber = "UID"+Math.floor(Math.random() * 9999999);
-			aptrinsic("identify",
+			/*aptrinsic("identify",
 			{
 				"id" : userId,
 				"email": email,
@@ -54,7 +54,7 @@ function logMeIn(){
 				"id": domain, //Required		
 				"name":cname,
 				"tenant":"website1"
-			});
+			});*/
 			
 //			console.log(email,firstName,lastName,userId,domain);
 			alert("Logged in user id: "+ firstName);
