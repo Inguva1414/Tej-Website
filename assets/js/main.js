@@ -48,7 +48,7 @@ function logMeIn(){
 			const lastName = name[1];
 			const userId = email.split("@")[0];
 			// const uniqueNumber = "UID"+Math.floor(Math.random() * 9999999);
-			aptrinsic("identify",
+			/*aptrinsic("identify",
 			{
 				"id" : userId,
 				"email": email,
@@ -59,7 +59,7 @@ function logMeIn(){
 				"id": domain, //Required		
 				"name":cname,
 				"tenant":"website1"
-			});
+			});*/
 			
 //			console.log(email,firstName,lastName,userId,domain);
 			alert("Logged in user id: "+ firstName);
